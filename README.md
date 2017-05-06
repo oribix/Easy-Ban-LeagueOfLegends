@@ -5,17 +5,22 @@ It should work with python 3 but is tested with python 2.
 
 # Usage
 `python easyban.py [options] [elo]`
+
 Note: anything enclosed in brackets[] is optional
 
 ## Options
-`-v`
-  verbose : spits out extra information when printing results.
+`-v`<br />
+  verbose : spits out extra information when printing results.<br />
     Specifically - winrate, banrate, pickrate, and true pickrate(ban adjusted).
 
 No other options currently exist.
 
 ## Elo
 Champion.gg currently supports `bronze`, `silver`, `gold`, `plat`, `platplus`.
+
 Gold is the default elo since I am a scrub.
 The default elo can be easily changed by modifying the ELO variable in the script to the elo you want.
-`ELO = "gold"` -> `ELO = "silver"` for example.
+```
+ELO = "gold"` -> `ELO = "silver"
+```
+for example.
