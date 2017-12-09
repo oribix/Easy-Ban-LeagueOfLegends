@@ -20,7 +20,9 @@ Champion.gg currently supports `bronze`, `silver`, `gold`, `plat`, `platplus`.
 
 Gold is the default elo since I am a scrub.
 The default elo can be easily changed by modifying the ELO variable in the script to the elo you want.
+
+For example:
+
 ```
 ELO = "gold"` -> `ELO = "silver"
 ```
-for example.
