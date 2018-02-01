@@ -1,12 +1,19 @@
 # EZ Ban - League of Legends Ranked Bans
 This script fetches stats from champion.gg and tells you the (theoretical) best bans for each elo.
-So far, the script has been tested on bash on ubuntu on windows.
-It should work with python 3 but is tested with python 2.
+
+This script can be run with both python2 and python3
 
 # Usage
-`python easyban.py [options] [elo]`
+`python easyban.py [options] [elo] [# of Results]`
 
-Note: anything enclosed in brackets[] is optional
+You can combine or omit anything in brackets.
+
+```
+python -v silver 5
+```
+
+This command will show the top 5 best picks/bans for silver.
+It will also show more verbose output due to the -v flag.
 
 ## Options
 `-v`<br />
@@ -18,11 +25,25 @@ No other options currently exist.
 ## Elo
 Champion.gg currently supports `bronze`, `silver`, `gold`, `plat`, `platplus`.
 
-Gold is the default elo since I am a scrub.
-The default elo can be easily changed by modifying the ELO variable in the script to the elo you want.
+If Elo is not specified, Gold is used by default.
+
+The default Elo can be changed.
+Open up the easyban.py in a text editor such as notepad
+and change `ELO = "gold"` to the Elo of your choice.
+
 
 For example:
 
 ```
 ELO = "gold"` -> `ELO = "silver"
 ```
+
+## Increase/Decrease number of Results
+You can additionally specify the number of results to show;
+simply add the number at the end.
+
+```
+python easyban.py 5
+```
+
+This command will show you the top 5 best bans for the default Elo.
